@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Vectores3D</string>
+
+    <string name="start">Calculadora \nde \nVectores3D</string>
+    <string name="title_activity_insert_data">insert_data</string>
+    <string name="suma_head"><b>Suma</b></string>
+    <string name="suma_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
+    <string name="suma_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
+    <string name="suma_result">Resultado: &lt;%1$s %2$s %3$s&gt; </string>
+
+
+    <string name="resta_head"><b>Resta</b></string>
+    <string name="resta_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
+    <string name="resta_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
+    <string name="resta_result">Resultado: &lt;%1$s %2$s %3$s&gt; </string>
+
+
+    <string name="modulo_head"><b>Modulo</b></string>
+    <string name="modulo_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
+    <string name="modulo_result1">Rm: %1$s</string>
+    <string name="modulo_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
+    <string name="modulo_result2">Rm: %1$s </string>
+
+
+    <string name="producto_punto_head"><b>Productor Punto</b></string>
+    <string name="producto_punto_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
+    <string name="producto_punto_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
+    <string name="producto_punto_result">PP: %1$s</string>
+    <string name="title_activity_menu_inicio">menu_inicio</string>
 </resources>
