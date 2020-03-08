@@ -3,6 +3,8 @@
 
     <string name="start">Calculadora \nde \nVectores3D</string>
     <string name="title_activity_insert_data">insert_data</string>
+    <string name="title_activity_menu_inicio">menu_inicio</string>
+
     <string name="suma_head"><b>Suma</b></string>
     <string name="suma_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
     <string name="suma_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
@@ -22,9 +24,34 @@
     <string name="modulo_result2">Rm: %1$s </string>
 
 
-    <string name="producto_punto_head"><b>Productor Punto</b></string>
+    <string name="producto_punto_head"><b>Producto Punto</b></string>
     <string name="producto_punto_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
     <string name="producto_punto_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
     <string name="producto_punto_result">PP: %1$s</string>
-    <string name="title_activity_menu_inicio">menu_inicio</string>
+
+
+    <string name="producto_cruz_head"><b>Producto Cruz</b></string>
+
+
+    <string name="vector_unitario_head"><b>Vector Unitario</b></string>
+
+
+    <string name="menu_head">Ingresa los campos</string>
+    <string name="menu_vector1_value1">X</string>
+    <string name="menu_vector1_value2">Y</string>
+    <string name="menu_vector1_value3">Z</string>
+    <string name="menu_vector2_value1">X</string>
+    <string name="menu_vector2_value2">Y</string>
+    <string name="menu_vector2_value3">Z</string>
+
+    <string name="menu_subhead1">Vector 1</string>
+    <string name="menu_subhead2">Vector 2</string>
+
+    <string name="menu_item1">Sumar</string>
+    <string name="menu_item2">Restar</string>
+    <string name="menu_item3">Prod. Punto</string>
+    <string name="menu_item4">Prod. Cruz</string>
+    <string name="menu_item5">Vector Unitario</string>
+    <string name="menu_item6">Modulo</string>
+
 </resources>

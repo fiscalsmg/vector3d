@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Sumar" android:id="@+id/item1">
-    </item>
+    <item
+        android:id="@+id/item1"
+        android:orderInCategory="100"
+        android:title="@string/menu_item1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item2"
+        android:orderInCategory="100"
+        android:title="@string/menu_item2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3"
+        android:orderInCategory="100"
+        android:title="@string/menu_item3"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item4"
+        android:orderInCategory="100"
+        android:title="@string/menu_item4"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item5"
+        android:orderInCategory="100"
+        android:title="@string/menu_item5"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item6"
+        android:orderInCategory="100"
+        android:title="@string/menu_item6"
+        app:showAsAction="never" />
+
 </menu>
+
