@@ -12,9 +12,11 @@ public class Display_Vectors {
 
     private double[] array_vectors;
 
+
     public Display_Vectors(){
 
     }
+
 
     public Display_Vectors(double[] array_vectors){
         this.array_vectors = array_vectors;
@@ -62,5 +64,75 @@ public class Display_Vectors {
         array_vectors[6] = result_vector.getX();
         array_vectors[7] = result_vector.getY();
         array_vectors[8] = result_vector.getZ();
+    }
+
+
+    /**
+     * Resta los vectores
+     */
+    public void extraction_vectors(){
+        Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
+        Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
+
+        Vector3D result_vector = vector1.subtraction(vector2);
+
+        array_vectors[6] = result_vector.getX();
+        array_vectors[7] = result_vector.getY();
+        array_vectors[8] = result_vector.getZ();
+    }
+
+
+    /**
+     * Producto punto
+     */
+    public void point_product(){
+        Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
+        Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
+
+        double result = vector1.cross_point(vector2);
+
+        array_vectors[6] = result;
+    }
+
+
+    /**
+     * Producto cruz
+     */
+    public void cross_product(){
+        Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
+        Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
+
+        Vector3D result_vector = vector1.subtraction(vector2);
+
+        array_vectors[6] = result_vector.getX();
+        array_vectors[7] = result_vector.getY();
+        array_vectors[8] = result_vector.getZ();
+    }
+
+
+    /**
+     * Vector unitario
+     */
+    public void unit_vector(){
+        Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
+        Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
+
+        Vector3D result_vector = vector1.unit();
+
+        array_vectors[6] = result_vector.getX();
+        array_vectors[7] = result_vector.getY();
+        array_vectors[8] = result_vector.getZ();
+    }
+
+
+    /**
+     *Modulo
+     */
+    public void length_vector(){
+        Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
+        Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
+
+        array_vectors[6] = vector1.length_vector();
+        array_vectors[7] = vector2.length_vector();
     }
 }
