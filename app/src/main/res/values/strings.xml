@@ -6,9 +6,9 @@
     <string name="title_activity_menu_inicio">menu_inicio</string>
 
     <string name="suma_head"><b>Suma</b></string>
-    <string name="suma_vector1">Vector 1: &lt;%1$s %2$s %3$s&gt; </string>
-    <string name="suma_vector2">Vector 2: &lt;%1$s %2$s %3$s&gt;  </string>
-    <string name="suma_result">Resultado: &lt;%1$s %2$s %3$s&gt; </string>
+    <string name="suma_vector1">Vector 1: &lt;%1$s, %2$s, %3$s&gt; </string>
+    <string name="suma_vector2">Vector 2: &lt;%1$s, %2$s, %3$s&gt;  </string>
+    <string name="suma_result">Resultado: &lt;%1$s, %2$s, %3$s&gt; </string>
 
 
     <string name="resta_head"><b>Resta</b></string>

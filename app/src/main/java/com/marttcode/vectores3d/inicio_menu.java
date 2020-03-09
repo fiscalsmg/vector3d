@@ -15,6 +15,7 @@ public class inicio_menu extends AppCompatActivity {
     private int [] vectores = new int[6];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
     private Check_Vector ckeck = new Check_Vector();
+    private Bundle bolsa = new Bundle();
 
 
     @Override
@@ -56,24 +57,36 @@ public class inicio_menu extends AppCompatActivity {
         int id = item.getItemId();
 
         if (fill_array_vectors()) {
+
+            bolsa.putIntArray("VECTORES", vectores);
+
+            Intent intent = new Intent();
+            intent.putExtras(bolsa);
+
             switch (id) {
                 case R.id.item1:
-                    startActivity(new Intent(this, suma.class));
+                    intent.setClass(this, suma.class);
+                    startActivity(intent);
                     break;
                 case R.id.item2:
-                    startActivity(new Intent(this, resta.class));
+                    intent.setClass(this, resta.class);
+                    startActivity(intent);
                     break;
                 case R.id.item3:
-                    startActivity(new Intent(this, producto_punto.class));
+                    intent.setClass(this, producto_punto.class);
+                    startActivity(intent);
                     break;
                 case R.id.item4:
-                    startActivity(new Intent(this, producto_cruz.class));
+                    intent.setClass(this, producto_cruz.class);
+                    startActivity(intent);
                     break;
                 case R.id.item5:
-                    startActivity(new Intent(this, vector_unitario.class));
+                    intent.setClass(this, vector_unitario.class);
+                    startActivity(intent);
                     break;
                 case R.id.item6:
-                    startActivity(new Intent(this, modulo.class));
+                    intent.setClass(this, modulo.class);
+                    startActivity(intent);
                     break;
             }
         }

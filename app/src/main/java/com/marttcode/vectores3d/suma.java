@@ -14,11 +14,14 @@ public class suma extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suma);
 
-        Resources res = getResources();
-        String recurso = res.getString(R.string.suma_result);
-        String stringFormateada = String.format(recurso, "1", "2", "3");
+        Bundle bolsa_resivida = getIntent().getExtras();
+        int[] numero_resivido = bolsa_resivida.getIntArray("VECTORES");
 
-        TextView texto = findViewById(R.id.suma_result);
+        Resources res = getResources();
+        String recurso = res.getString(R.string.suma_vector1);
+        String stringFormateada = String.format(recurso, ""+numero_resivido[0], ""+numero_resivido[1], ""+numero_resivido[2]);
+
+        TextView texto = findViewById(R.id.suma_vector1);
         texto.setText(stringFormateada);
 
     }
