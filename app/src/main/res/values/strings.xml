@@ -61,5 +61,8 @@
     <string name="menu_item4">Prod. Cruz</string>
     <string name="menu_item5">Vector Unitario</string>
     <string name="menu_item6">Modulo</string>
+    
+    
+    <string name="error_fill">Error en el llenado de vecotres</string>
 
 </resources>
