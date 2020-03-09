@@ -20,9 +20,9 @@ public class resta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resta);
 
-        vector1 = findViewById(R.id.suma_vector1);
-        vector2 = findViewById(R.id.suma_vector2);
-        result = findViewById(R.id.suma_result);
+        vector1 = findViewById(R.id.resta_vector1);
+        vector2 = findViewById(R.id.resta_vector2);
+        result = findViewById(R.id.resta_result);
 
         bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");
@@ -50,8 +50,8 @@ public class resta extends AppCompatActivity {
      * y los despliega utilizando una clase externa.
      */
     private void show_vectors(){
-        execute.display_vectors(R.string.suma_vector1, 0,1,2, vector1, this);
-        execute.display_vectors(R.string.suma_vector2, 3,4,5, vector2, this);
+        execute.display_vectors(R.string.resta_vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.resta_vector2, 3,4,5, vector2, this);
     }
 
 
@@ -61,6 +61,6 @@ public class resta extends AppCompatActivity {
     private void extraction_vectors(){
         execute.extraction_vectors();
 
-        execute.display_vectors(R.string.suma_result, 6,7,8, result, this);
+        execute.display_vectors(R.string.resta_result, 6,7,8, result, this);
     }
 }
