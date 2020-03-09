@@ -18,7 +18,7 @@ public class Check_Vector {
      * @param vectores
      * @return true if all vectors are valid
      */
-    public boolean check_vectors(int [] vectores){
+    public boolean check_vectors(double [] vectores){
 
         int correct_value = 0;
 

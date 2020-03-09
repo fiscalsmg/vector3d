@@ -15,7 +15,7 @@ public class suma extends AppCompatActivity {
         setContentView(R.layout.activity_suma);
 
         Bundle bolsa_resivida = getIntent().getExtras();
-        int[] numero_resivido = bolsa_resivida.getIntArray("VECTORES");
+        double[] numero_resivido = bolsa_resivida.getDoubleArray("VECTORES");
 
         Resources res = getResources();
         String recurso = res.getString(R.string.suma_vector1);

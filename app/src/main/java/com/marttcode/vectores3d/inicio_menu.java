@@ -12,7 +12,7 @@ import vector.Check_Vector;
 
 public class inicio_menu extends AppCompatActivity {
 
-    private int [] vectores = new int[6];
+    private double [] vectores = new double[6];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
     private Check_Vector ckeck = new Check_Vector();
     private Bundle bolsa = new Bundle();
@@ -58,7 +58,7 @@ public class inicio_menu extends AppCompatActivity {
 
         if (fill_array_vectors()) {
 
-            bolsa.putIntArray("VECTORES", vectores);
+            bolsa.putDoubleArray("VECTORES", vectores);
 
             Intent intent = new Intent();
             intent.putExtras(bolsa);
@@ -113,12 +113,12 @@ public class inicio_menu extends AppCompatActivity {
      */
     private boolean fill_array_vectors() {
         try{
-            vectores[0] = Integer.parseInt(vector1_result1.getText().toString());
-            vectores[1] = Integer.parseInt(vector1_result2.getText().toString());
-            vectores[2] = Integer.parseInt(vector1_result3.getText().toString());
-            vectores[3] = Integer.parseInt(vector2_result1.getText().toString());
-            vectores[4] = Integer.parseInt(vector2_result2.getText().toString());
-            vectores[5] = Integer.parseInt(vector2_result3.getText().toString());
+            vectores[0] = Double.parseDouble(vector1_result1.getText().toString());
+            vectores[1] = Double.parseDouble(vector1_result2.getText().toString());
+            vectores[2] = Double.parseDouble(vector1_result3.getText().toString());
+            vectores[3] = Double.parseDouble(vector2_result1.getText().toString());
+            vectores[4] = Double.parseDouble(vector2_result2.getText().toString());
+            vectores[5] = Double.parseDouble(vector2_result3.getText().toString());
 
             ckeck.check_vectors(vectores);
 
