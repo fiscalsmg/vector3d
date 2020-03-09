@@ -16,6 +16,7 @@ public class inicio_menu extends AppCompatActivity {
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
     private Check_Vector ckeck = new Check_Vector();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class inicio_menu extends AppCompatActivity {
 
         set_views_to_activities();
     }
+
 
     /**
      *Asigna vistas de mi actividad de inicio,
@@ -37,12 +39,14 @@ public class inicio_menu extends AppCompatActivity {
         vector2_result3 = findViewById(R.id.vector2_value3);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -76,6 +80,7 @@ public class inicio_menu extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 
     /**
      * Check if all values was fill

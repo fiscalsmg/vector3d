@@ -7,9 +7,11 @@ import com.marttcode.vectores3d.R;
 
 public class Check_Vector {
 
+
     public Check_Vector(){
 
     }
+
 
     /**
      * Check if all vales are valid
@@ -32,6 +34,7 @@ public class Check_Vector {
             return false;
         }
     }
+
 
     /**
      * Error message when fill vector values
