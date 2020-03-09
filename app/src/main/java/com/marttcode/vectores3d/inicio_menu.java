@@ -12,7 +12,7 @@ import vector.Check_Vector;
 
 public class inicio_menu extends AppCompatActivity {
 
-    private double [] vectores = new double[6];
+    private double [] vectores = new double[9];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
     private Check_Vector ckeck = new Check_Vector();
     private Bundle bolsa = new Bundle();
@@ -119,8 +119,9 @@ public class inicio_menu extends AppCompatActivity {
             vectores[3] = Double.parseDouble(vector2_result1.getText().toString());
             vectores[4] = Double.parseDouble(vector2_result2.getText().toString());
             vectores[5] = Double.parseDouble(vector2_result3.getText().toString());
-
-            ckeck.check_vectors(vectores);
+            vectores[6] = 0;
+            vectores[7] = 0;
+            vectores[8] = 0;
 
             return true;
         }catch (Exception e) {

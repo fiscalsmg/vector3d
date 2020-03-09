@@ -14,29 +14,6 @@ public class Check_Vector {
 
 
     /**
-     * Check if all vales are valid
-     * @param vectores
-     * @return true if all vectors are valid
-     */
-    public boolean check_vectors(double [] vectores){
-
-        int correct_value = 0;
-
-        for (int i=0; i < 6; i++) {
-            if (vectores[i] != 0){
-                correct_value += 1;
-            }
-        }
-
-        if (correct_value == 6 ){
-            return true;
-        }else {
-            return false;
-        }
-    }
-
-
-    /**
      * Error message when fill vector values
      * @param activity Need the activity context for know where show
      * @return a Toast for show in required activity

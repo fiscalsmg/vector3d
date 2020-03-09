@@ -9,7 +9,6 @@ public class Vector3D {
     private double x, y, z;
 
 
-
     /*
     *Constructor default and constructor with params
      */
@@ -19,12 +18,12 @@ public class Vector3D {
         this.z = 0;
     }
 
+
     public Vector3D(double x, double y, double z){
         this.x = x;
         this.y = y;
         this.z = z;
     }
-
 
 
     /*
@@ -40,6 +39,7 @@ public class Vector3D {
         return result_vector;
     }
 
+
     public Vector3D subtraction(Vector3D vector){
         Vector3D result_vector = new Vector3D();
 
@@ -50,12 +50,14 @@ public class Vector3D {
         return result_vector;
     }
 
+
     public  double length_vector(){
 
         double result = Math.sqrt( this.x * this.x + this.y * this.y + this.z * this.z );
 
         return result;
     }
+
 
     public Vector3D unit(){
         Vector3D result_vector = new Vector3D();
@@ -68,12 +70,14 @@ public class Vector3D {
         return result_vector;
     }
 
+
     public Vector3D scalar(double scalar){
 
         Vector3D result_vector = new Vector3D(scalar * this.x, scalar * this.y, scalar * this.z);
 
         return result_vector;
     }
+
 
     public Vector3D cross_product(Vector3D vector){
         Vector3D result_vector = new Vector3D();
@@ -84,6 +88,7 @@ public class Vector3D {
 
         return result_vector;
     }
+
 
     public double cross_point(Vector3D vector){
         double resutl = this.x * vector.getX() + this.y * vector.getY() + this.z * vector.getZ();
