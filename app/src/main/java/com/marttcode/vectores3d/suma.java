@@ -2,18 +2,17 @@ package com.marttcode.vectores3d;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import vector.Vector3D;
+import vector.Display_Vectors;
 
 public class suma extends AppCompatActivity {
 
     private TextView vector1, vector2, result;
     private Bundle bolsa_resivida;
     private double[] vector_array;
+    private Display_Vectors execute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +25,10 @@ public class suma extends AppCompatActivity {
 
         bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");
+        execute = new Display_Vectors(vector_array);
 
-        show_vectores();
-        ejecut_suma_vectores();
+        show_vectors();
+        addition_vectors();
     }
 
 
@@ -43,48 +43,22 @@ public class suma extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
     }
 
-
-    /**
-     * Despliega valores del vector
-     * @param xml_string Id de la etiqueta XML de donde extraera el string a formatear
-     * @param x Posicion en el arreglo del eje X
-     * @param y Posicion en el arreglo del eje Y
-     * @param z Posicion en el arreglo del eje Z
-     * @param vector Vista donde desplegara el vector
-     */
-    private void display_vectores(int xml_string, int x, int y, int z, TextView vector){
-        String recurso, stringFormateada;
-        Resources res = getResources();
-
-        recurso = res.getString(xml_string);
-        stringFormateada = String.format(recurso, ""+vector_array[x], ""+vector_array[y], ""+vector_array[z]);
-        vector.setText(stringFormateada);
-    }
-
-
     /**
      * Extrae los valores del los vectores del array enviado desde el menú
-     * y los despliega.
+     * y los despliega utilizando una clase externa.
      */
-    private void show_vectores(){
-        display_vectores(R.string.suma_vector1, 0,1,2, vector1);
-        display_vectores(R.string.suma_vector2, 3,4,5, vector2);
+    private void show_vectors(){
+        execute.display_vectors(R.string.suma_vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.suma_vector2, 3,4,5, vector2, this);
     }
 
 
     /**
-     * Calcula la suma de los vectores.
+     * Calcula la suma de los vectores, enviando los datos a otra clase.
      */
-    private void ejecut_suma_vectores(){
-        Vector3D vector1 = new Vector3D(vector_array[0], vector_array[1], vector_array[2]);
-        Vector3D vector2 = new Vector3D(vector_array[3], vector_array[4], vector_array[5]);
+    private void addition_vectors(){
+        execute.addition_vectors();
 
-        Vector3D result_vector = vector1.addition(vector2);
-
-        vector_array[6] = result_vector.getX();
-        vector_array[7] = result_vector.getY();
-        vector_array[8] = result_vector.getZ();
-
-        display_vectores(R.string.suma_result, 6,7,8, result);
+        execute.display_vectors(R.string.suma_result, 6,7,8, result, this);
     }
 }

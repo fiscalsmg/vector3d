@@ -8,13 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import vector.Check_Vector;
+import vector.Display_Vectors;
 
 public class inicio_menu extends AppCompatActivity {
 
     private double [] vectores = new double[9];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
-    private Check_Vector ckeck = new Check_Vector();
+    private Display_Vectors ckeck = new Display_Vectors();
     private Bundle bolsa = new Bundle();
 
 
