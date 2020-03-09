@@ -82,6 +82,18 @@ public class inicio_menu extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+
     /**
      * Check if all values was fill
      * @return True if all it's OK

@@ -1,5 +1,6 @@
 package com.marttcode.vectores3d;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
@@ -15,10 +16,22 @@ public class suma extends AppCompatActivity {
 
         Resources res = getResources();
         String recurso = res.getString(R.string.suma_result);
-        String stringFormateada = String.format(recurso, "James", "Hola", "Puto");
+        String stringFormateada = String.format(recurso, "1", "2", "3");
 
         TextView texto = findViewById(R.id.suma_result);
         texto.setText(stringFormateada);
 
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
     }
 }
