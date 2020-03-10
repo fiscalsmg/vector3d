@@ -53,11 +53,11 @@ public class modulo extends AppCompatActivity {
         Resources res = getResources();
 
         recurso = res.getString(R.string.modulo_result1);
-        stringFormateada = String.format(recurso, ""+vector_array[6]);
+        stringFormateada = String.format(recurso, vector_array[6]);
         result1.setText(stringFormateada);
 
         recurso = res.getString(R.string.modulo_result2);
-        stringFormateada = String.format(recurso, ""+vector_array[7]);
+        stringFormateada = String.format(recurso, vector_array[7]);
         result2.setText(stringFormateada);
     }
 

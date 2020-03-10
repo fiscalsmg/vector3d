@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.content.res.Resources;
 
 import com.marttcode.vectores3d.R;
 
@@ -47,7 +46,7 @@ public class Display_Vectors {
         Resources res = actividad.getResources();
 
         recurso = res.getString(xml_string);
-        stringFormateada = String.format(recurso, ""+array_vectors[x], ""+array_vectors[y], ""+array_vectors[z]);
+        stringFormateada = String.format(recurso, array_vectors[x], array_vectors[y], array_vectors[z]);
         vector.setText(stringFormateada);
     }
 
