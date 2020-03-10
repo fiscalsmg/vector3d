@@ -23,7 +23,7 @@ public class modulo extends AppCompatActivity {
         vector1 = findViewById(R.id.modulo_vector1);
         vector2 = findViewById(R.id.modulo_vector2);
         result1 = findViewById(R.id.modulo_result1);
-        result2 = findViewById(R.id.modulo_result2);
+        result2 = findViewById(R.id.modulo_resul2);
 
         bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");

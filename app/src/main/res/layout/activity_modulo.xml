@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/modulo_vector1" />
 
     <TextView
-        android:id="@+id/modulo_result2"
+        android:id="@+id/modulo_vector2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/modulo_vector2"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <TextView
-        android:id="@+id/modulo_vector2"
+        android:id="@+id/modulo_resul2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/modulo_result2"
@@ -80,5 +80,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/modulo_result2" />
+        app:layout_constraintTop_toBottomOf="@+id/modulo_vector2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
