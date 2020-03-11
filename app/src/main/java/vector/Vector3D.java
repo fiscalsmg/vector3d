@@ -3,15 +3,15 @@ package vector;
 public class Vector3D {
 
 
-    /*
-    * This are the global variables
+    /**
+    * This are the globals variable for the three vector's dimension
     */
     private double x, y, z;
 
 
-    /*
-    *Constructor default and constructor with params
-     */
+    /**
+    * Constructor default and constructor with params
+    */
     public Vector3D(){
         this.x = 0;
         this.y = 0;
@@ -26,8 +26,10 @@ public class Vector3D {
     }
 
 
-    /*
-    *Vector Operations
+    /**
+     * Make de addition for 2 vectors
+     * @param vector the vector to add the vector in use
+     * @return a new vector, result vector
      */
     public Vector3D addition(Vector3D vector){
         Vector3D result_vector = new Vector3D();
@@ -40,6 +42,11 @@ public class Vector3D {
     }
 
 
+    /**
+     * Make de subtraction for a some vector
+     * @param vector Need the vector to subtract
+     * @return a new vector, result vector
+     */
     public Vector3D subtraction(Vector3D vector){
         Vector3D result_vector = new Vector3D();
 
@@ -51,6 +58,10 @@ public class Vector3D {
     }
 
 
+    /**
+     * Make the module for a vector in use
+     * @return a float value with the result
+     */
     public  double length_vector(){
 
         double result = Math.sqrt( this.x * this.x + this.y * this.y + this.z * this.z );
@@ -59,6 +70,10 @@ public class Vector3D {
     }
 
 
+    /**
+     * Make the unit vector, use the method length
+     * @return a second vector which is the result
+     */
     public Vector3D unit(){
         Vector3D result_vector = new Vector3D();
         double length = length_vector();
@@ -71,14 +86,23 @@ public class Vector3D {
     }
 
 
+    /**
+     * I don't know for what is this method
+     * @param scalar
+     * @return
+     */
     public Vector3D scalar(double scalar){
-
         Vector3D result_vector = new Vector3D(scalar * this.x, scalar * this.y, scalar * this.z);
 
         return result_vector;
     }
 
 
+    /**
+     * Make the cross_product
+     * @param vector Need a vector to do the operation
+     * @return a new vector with the operation result
+     */
     public Vector3D cross_product(Vector3D vector){
         Vector3D result_vector = new Vector3D();
 
@@ -90,6 +114,11 @@ public class Vector3D {
     }
 
 
+    /**
+     *
+     * @param vector
+     * @return
+     */
     public double cross_point(Vector3D vector){
         double resutl = this.x * vector.getX() + this.y * vector.getY() + this.z * vector.getZ();
 
@@ -97,9 +126,9 @@ public class Vector3D {
     }
 
 
-    /*
-    *Getter and setter
-     */
+    /**
+    * Getter and setter
+    */
     public double getX() {
         return x;
     }
