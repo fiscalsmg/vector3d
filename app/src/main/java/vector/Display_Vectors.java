@@ -9,14 +9,18 @@ import com.marttcode.vectores3d.R;
 
 public class Display_Vectors {
 
+
+    /**
+     * In this array save all result it the position 6 to 8
+     * In case some case 6 to 11 (Unit vector)
+     */
     private double[] array_vectors;
 
 
-    public Display_Vectors(){
-
-    }
-
-
+    /**
+     * Constructor need the array send for the inicio_menu class
+     * @param array_vectors Values saved in the 6 fists positions
+     */
     public Display_Vectors(double[] array_vectors){
         this.array_vectors = array_vectors;
     }
@@ -34,7 +38,7 @@ public class Display_Vectors {
 
 
     /**
-     * Despliega valores del vector
+     * Despliega resultados del vector
      * @param xml_string Id de la etiqueta XML de donde extraera el string a formatear
      * @param x Posicion en el arreglo del eje X
      * @param y Posicion en el arreglo del eje Y
@@ -52,7 +56,9 @@ public class Display_Vectors {
 
 
     /**
-     * Calcula la suma de los vectores.
+     * Calcula la suma de los vectores y los almacena
+     * en las posiciones 6 hasta 8 del arreglo
+     * para que después las despliege
      */
     public void addition_vectors(){
         Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
@@ -67,7 +73,8 @@ public class Display_Vectors {
 
 
     /**
-     * Resta los vectores
+     * Resta los vectores y los alamcena en las tres ultimas
+     * pocissiones del arreglo
      */
     public void extraction_vectors(){
         Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
@@ -82,7 +89,7 @@ public class Display_Vectors {
 
 
     /**
-     * Producto punto
+     * Producto punto alamcena el resultado en la pocision 6 del arreglo
      */
     public void point_product(){
         Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
@@ -110,7 +117,9 @@ public class Display_Vectors {
 
 
     /**
-     * Vector unitario
+     * Vector unitario, despues de calcular el resultado
+     * de cada vector unitario los alamcena en las utlimas
+     * 6 posiciones
      */
     public void unit_vector(){
         Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);

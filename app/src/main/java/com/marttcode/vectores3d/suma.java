@@ -10,8 +10,6 @@ import vector.Display_Vectors;
 public class suma extends AppCompatActivity {
 
     private TextView vector1, vector2, result;
-    private Bundle bolsa_resivida;
-    private double[] vector_array;
     private Display_Vectors execute;
 
     @Override
@@ -23,8 +21,9 @@ public class suma extends AppCompatActivity {
         vector2 = findViewById(R.id.suma_vector2);
         result = findViewById(R.id.suma_result);
 
-        bolsa_resivida = getIntent().getExtras();
-        vector_array = bolsa_resivida.getDoubleArray("VECTORES");
+
+        Bundle bolsa_resivida = getIntent().getExtras();
+        double[] vector_array = bolsa_resivida.getDoubleArray("VECTORES");
         execute = new Display_Vectors(vector_array);
 
         show_vectors();

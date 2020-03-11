@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.Toast;
 
-import vector.Display_Vectors;
 
 public class inicio_menu extends AppCompatActivity {
 
     private double [] vectores = new double[12];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
-    private Display_Vectors ckeck = new Display_Vectors();
     private Bundle bolsa = new Bundle();
 
 
@@ -28,7 +27,7 @@ public class inicio_menu extends AppCompatActivity {
 
 
     /**
-     *Asigna vistas de mi actividad de inicio,
+     *Asigna vistas de mi actividad de inicio, a cada varibale
      *
      */
     private void set_views_to_activities(){
@@ -108,8 +107,8 @@ public class inicio_menu extends AppCompatActivity {
 
 
     /**
-     * Check if all values was fill
-     * @return True if all it's OK
+     * Check if all values was fill, the last 6 values are for save the result vectors
+     * @return True if all it's OK, else show a Toast
      */
     private boolean fill_array_vectors() {
         try{
@@ -128,7 +127,7 @@ public class inicio_menu extends AppCompatActivity {
 
             return true;
         }catch (Exception e) {
-            ckeck.empty_values(this).show();
+            Toast.makeText(this, R.string.error_fill, Toast.LENGTH_SHORT);
             return false;
         }
     }
