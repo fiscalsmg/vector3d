@@ -10,7 +10,7 @@ import vector.Display_Vectors;
 public class vector_unitario extends AppCompatActivity {
 
 
-    private TextView vector1, vector2, result;
+    private TextView vector1, vector2, result1, result2;
     private Bundle bolsa_resivida;
     private double[] vector_array;
     private Display_Vectors execute;
@@ -23,7 +23,8 @@ public class vector_unitario extends AppCompatActivity {
 
         vector1 = findViewById(R.id.vector_unitario_vector1);
         vector2 = findViewById(R.id.vector_unitario_vector2);
-        result = findViewById(R.id.vector_unitario_result2);
+        result1 = findViewById(R.id.vector_unitario_result1);
+        result2 = findViewById(R.id.vector_unitario_result2);
 
         bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");
@@ -50,6 +51,7 @@ public class vector_unitario extends AppCompatActivity {
     private void unit_vector(){
         execute.unit_vector();
 
-        execute.display_vectors(R.string.vector_unitario_result, 6,7,8, result, this);
+        execute.display_vectors(R.string.vector_unitario_result1, 6,7,8, result1, this);
+        execute.display_vectors(R.string.vector_unitario_result2, 9,10,11, result2, this);
     }
 }

@@ -12,7 +12,7 @@ import vector.Display_Vectors;
 
 public class inicio_menu extends AppCompatActivity {
 
-    private double [] vectores = new double[9];
+    private double [] vectores = new double[12];
     private EditText vector1_result1, vector1_result2, vector1_result3, vector2_result1, vector2_result2, vector2_result3;
     private Display_Vectors ckeck = new Display_Vectors();
     private Bundle bolsa = new Bundle();
@@ -122,6 +122,9 @@ public class inicio_menu extends AppCompatActivity {
             vectores[6] = 0;
             vectores[7] = 0;
             vectores[8] = 0;
+            vectores[9] = 0;
+            vectores[10] = 0;
+            vectores[11] = 0;
 
             return true;
         }catch (Exception e) {
