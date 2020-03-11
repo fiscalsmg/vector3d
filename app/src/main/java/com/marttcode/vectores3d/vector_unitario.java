@@ -23,7 +23,7 @@ public class vector_unitario extends AppCompatActivity {
 
         vector1 = findViewById(R.id.vector_unitario_vector1);
         vector2 = findViewById(R.id.vector_unitario_vector2);
-        result = findViewById(R.id.vector_unitario_result);
+        result = findViewById(R.id.vector_unitario_result2);
 
         bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");

@@ -29,14 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.65" />
 
     <TextView
         android:id="@+id/vector_unitario_vector1"
@@ -55,19 +48,30 @@
         android:layout_height="wrap_content"
         android:text="@string/vector_unitario_vector2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline22"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline21" />
 
     <TextView
-        android:id="@+id/vector_unitario_result"
+        android:id="@+id/vector_unitario_result2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/vector_unitario_result"
+        android:text="@string/vector_unitario_result2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+        app:layout_constraintTop_toBottomOf="@+id/vector_unitario_vector2" />
+
+    <TextView
+        android:id="@+id/vector_unitario_result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vector_unitario_result1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vector_unitario_vector1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

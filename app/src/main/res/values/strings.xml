@@ -38,9 +38,9 @@
 
     <string name="vector_unitario_head"><b>Vector Unitario</b></string>
     <string name="vector_unitario_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="vector_unitario_result1">Vector Unitario 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
     <string name="vector_unitario_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="vector_unitario_result">Resultado:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-
+    <string name="vector_unitario_result2">Vector Unitario 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
 
 
 
