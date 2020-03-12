@@ -11,8 +11,6 @@ public class vector_unitario extends AppCompatActivity {
 
 
     private TextView vector1, vector2, result1, result2;
-    private Bundle bolsa_resivida;
-    private double[] vector_array;
     private Display_Vectors execute;
 
 
@@ -26,8 +24,8 @@ public class vector_unitario extends AppCompatActivity {
         result1 = findViewById(R.id.vector_unitario_result1);
         result2 = findViewById(R.id.vector_unitario_result2);
 
-        bolsa_resivida = getIntent().getExtras();
-        vector_array = bolsa_resivida.getDoubleArray("VECTORES");
+        Bundle bolsa_resivida = getIntent().getExtras();
+        double[] vector_array = bolsa_resivida.getDoubleArray("VECTORES");
         execute = new Display_Vectors(vector_array);
 
         show_vectors();

@@ -11,7 +11,6 @@ import vector.Display_Vectors;
 public class modulo extends AppCompatActivity {
 
     private TextView vector1, vector2, result1, result2;
-    private Bundle bolsa_resivida;
     private double[] vector_array;
     private Display_Vectors execute;
 
@@ -25,7 +24,7 @@ public class modulo extends AppCompatActivity {
         result1 = findViewById(R.id.modulo_result1);
         result2 = findViewById(R.id.modulo_resul2);
 
-        bolsa_resivida = getIntent().getExtras();
+        Bundle bolsa_resivida = getIntent().getExtras();
         vector_array = bolsa_resivida.getDoubleArray("VECTORES");
         execute = new Display_Vectors(vector_array);
 

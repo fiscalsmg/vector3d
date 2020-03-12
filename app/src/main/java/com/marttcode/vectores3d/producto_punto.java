@@ -11,8 +11,6 @@ public class producto_punto extends AppCompatActivity {
 
 
     private TextView vector1, vector2, result;
-    private Bundle bolsa_resivida;
-    private double[] vector_array;
     private Display_Vectors execute;
 
 
@@ -25,8 +23,8 @@ public class producto_punto extends AppCompatActivity {
         vector2 = findViewById(R.id.producto_punto_vector2);
         result = findViewById(R.id.producto_punto_result);
 
-        bolsa_resivida = getIntent().getExtras();
-        vector_array = bolsa_resivida.getDoubleArray("VECTORES");
+        Bundle bolsa_resivida = getIntent().getExtras();
+        double[] vector_array = bolsa_resivida.getDoubleArray("VECTORES");
         execute = new Display_Vectors(vector_array);
 
         show_vectors();
