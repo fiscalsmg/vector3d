@@ -45,5 +45,7 @@
     
     
     <string name="error_fill">Vérifiez les valeurs</string>
+    <string name="error_undefined_value">Résultat Indéfini</string>
+    <string name="error_sorry">Impossible de calculer un ou les deux vecteurs unitaires</string>
 
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import vector.Display_Vectors;
 
@@ -30,6 +31,8 @@ public class vector_unitario extends AppCompatActivity {
 
         show_vectors();
         unit_vector();
+        maybe_error_vector1();
+        maybe_error_vector2();
     }
 
 
@@ -51,5 +54,23 @@ public class vector_unitario extends AppCompatActivity {
 
         execute.display_vectors(R.string.resutl1, 6,7,8, result1, this);
         execute.display_vectors(R.string.resutl2, 9,10,11, result2, this);
+    }
+
+    private void maybe_error_vector1(){
+        boolean error = execute.check_valid_vector1();
+
+        if (error){
+            Toast.makeText(this, R.string.error_sorry, Toast.LENGTH_SHORT).show();
+            result1.setText(R.string.error_undefined_value);
+        }
+    }
+
+    private void maybe_error_vector2(){
+        boolean error = execute.check_valid_vector2();
+
+        if (error){
+            Toast.makeText(this, R.string.error_sorry, Toast.LENGTH_SHORT).show();
+            result2.setText(R.string.error_undefined_value);
+        }
     }
 }

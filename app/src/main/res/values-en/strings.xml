@@ -45,5 +45,7 @@
     
     
     <string name="error_fill">Check the values</string>
+    <string name="error_undefined_value">Undefined Result</string>
+    <string name="error_sorry">Could not calculate one or both Unit vectors</string>
 
 </resources>

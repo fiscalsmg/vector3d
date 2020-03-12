@@ -1,11 +1,14 @@
 package vector;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.marttcode.vectores3d.R;
+
+import java.text.NumberFormat;
 
 public class Display_Vectors {
 
@@ -15,6 +18,7 @@ public class Display_Vectors {
      * In case some case 6 to 11 (Unit vector)
      */
     private double[] array_vectors;
+    private Context context;
 
 
     /**
@@ -23,6 +27,11 @@ public class Display_Vectors {
      */
     public Display_Vectors(double[] array_vectors){
         this.array_vectors = array_vectors;
+    }
+
+    public Display_Vectors(double[] array_vectors, Context context){
+        this.array_vectors = array_vectors;
+        this.context = context;
     }
 
 
@@ -146,5 +155,25 @@ public class Display_Vectors {
 
         array_vectors[6] = vector1.length_vector();
         array_vectors[7] = vector2.length_vector();
+    }
+
+
+    /**
+     *Verifica que le metodo vector_unitario envio valores diferentes de NaN
+     */
+    public boolean check_valid_vector1(){
+        if(Double.isNaN(array_vectors[6]) || Double.isNaN(array_vectors[7]) || Double.isNaN(array_vectors[8])){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean check_valid_vector2(){
+        if(Double.isNaN(array_vectors[9]) || Double.isNaN(array_vectors[10]) || Double.isNaN(array_vectors[11])){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
