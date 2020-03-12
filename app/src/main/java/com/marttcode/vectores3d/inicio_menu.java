@@ -127,7 +127,7 @@ public class inicio_menu extends AppCompatActivity {
 
             return true;
         }catch (Exception e) {
-            Toast.makeText(this, R.string.error_fill, Toast.LENGTH_SHORT);
+            Toast.makeText(this, R.string.error_fill, Toast.LENGTH_SHORT).show();
             return false;
         }
     }

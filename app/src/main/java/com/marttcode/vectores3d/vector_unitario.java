@@ -40,8 +40,8 @@ public class vector_unitario extends AppCompatActivity {
      * y los despliega utilizando una clase externa.
      */
     private void show_vectors(){
-        execute.display_vectors(R.string.vector_unitario_vector1, 0,1,2, vector1, this);
-        execute.display_vectors(R.string.vector_unitario_vector2, 3,4,5, vector2, this);
+        execute.display_vectors(R.string.vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.vector2, 3,4,5, vector2, this);
     }
 
 
@@ -51,7 +51,7 @@ public class vector_unitario extends AppCompatActivity {
     private void unit_vector(){
         execute.unit_vector();
 
-        execute.display_vectors(R.string.vector_unitario_result1, 6,7,8, result1, this);
-        execute.display_vectors(R.string.vector_unitario_result2, 9,10,11, result2, this);
+        execute.display_vectors(R.string.resutl1, 6,7,8, result1, this);
+        execute.display_vectors(R.string.resutl2, 9,10,11, result2, this);
     }
 }

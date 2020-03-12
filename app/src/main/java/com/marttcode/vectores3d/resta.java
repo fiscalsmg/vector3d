@@ -50,8 +50,8 @@ public class resta extends AppCompatActivity {
      * y los despliega utilizando una clase externa.
      */
     private void show_vectors(){
-        execute.display_vectors(R.string.resta_vector1, 0,1,2, vector1, this);
-        execute.display_vectors(R.string.resta_vector2, 3,4,5, vector2, this);
+        execute.display_vectors(R.string.vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.vector2, 3,4,5, vector2, this);
     }
 
 
@@ -61,6 +61,6 @@ public class resta extends AppCompatActivity {
     private void extraction_vectors(){
         execute.extraction_vectors();
 
-        execute.display_vectors(R.string.resta_result, 6,7,8, result, this);
+        execute.display_vectors(R.string.resutl, 6,7,8, result, this);
     }
 }

@@ -38,8 +38,8 @@ public class producto_punto extends AppCompatActivity {
      * y los despliega utilizando una clase externa.
      */
     private void show_vectors(){
-        execute.display_vectors(R.string.producto_punto_vector1, 0,1,2, vector1, this);
-        execute.display_vectors(R.string.producto_punto_vector2, 3,4,5, vector2, this);
+        execute.display_vectors(R.string.vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.vector2, 3,4,5, vector2, this);
     }
 
 

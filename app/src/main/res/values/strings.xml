@@ -1,59 +1,41 @@
 <resources>
     <string name="app_name">Vectores3D</string>
 
-    <string name="start"><b>Calculadora \nde \nVectores3D</b></string>
+    <string name="start"><b>Calculadora \nde \nVectores 3D</b></string>
     <string name="title_activity_insert_data">insert_data</string>
     <string name="title_activity_menu_inicio">menu_inicio</string>
 
+
+    <string name="vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="vector2">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl">Resultado:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl1">Resultado 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl2">Resultado 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+
+
     <string name="suma_head"><b>Suma</b></string>
-    <string name="suma_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="suma_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="suma_result">Resultado:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-
-
     <string name="resta_head"><b>Resta</b></string>
-    <string name="resta_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="resta_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="resta_result">Resultado:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-
-
     <string name="modulo_head"><b>Modulo</b></string>
-    <string name="modulo_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="modulo_result1">Rm: %.3f</string>
-    <string name="modulo_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="modulo_result2">Rm: %.3f</string>
-
-
+        <string name="modulo_result1">Rm: %.3f</string>
+        <string name="modulo_result2">Rm: %.3f</string>
     <string name="producto_punto_head"><b>Producto Punto</b></string>
-    <string name="producto_punto_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="producto_punto_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="producto_punto_result">PP: %.3f</string>
-
+        <string name="producto_punto_result">PP: %.3f</string>
 
     <string name="producto_cruz_head"><b>Producto Cruz</b></string>
-    <string name="producto_cruz_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="producto_cruz_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="producto_cruz_result">Resultado:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-
-
     <string name="vector_unitario_head"><b>Vector Unitario</b></string>
-    <string name="vector_unitario_vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="vector_unitario_result1">Vector Unitario 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="vector_unitario_vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-    <string name="vector_unitario_result2">Vector Unitario 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
-
+        <string name="vector_unitario_result1">Vector Unitario 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+        <string name="vector_unitario_result2">Vector Unitario 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
 
 
     <string name="menu_head"><b>Ingresa los vectores</b></string>
-    <string name="menu_vector1_value1">X</string>
-    <string name="menu_vector1_value2">Y</string>
-    <string name="menu_vector1_value3">Z</string>
-    <string name="menu_vector2_value1">X</string>
-    <string name="menu_vector2_value2">Y</string>
-    <string name="menu_vector2_value3">Z</string>
+    <string name="menu_vector_value_x">X</string>
+    <string name="menu_vector_value_y">Y</string>
+    <string name="menu_vector_value_z">Z</string>
+
 
     <string name="menu_subhead1">Vector 1</string>
     <string name="menu_subhead2">Vector 2</string>
+
 
     <string name="menu_item1">Sumar</string>
     <string name="menu_item2">Restar</string>

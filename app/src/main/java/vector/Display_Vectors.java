@@ -108,7 +108,7 @@ public class Display_Vectors {
         Vector3D vector1 = new Vector3D(array_vectors[0], array_vectors[1], array_vectors[2]);
         Vector3D vector2 = new Vector3D(array_vectors[3], array_vectors[4], array_vectors[5]);
 
-        Vector3D result_vector = vector1.subtraction(vector2);
+        Vector3D result_vector = vector1.cross_product(vector2);
 
         array_vectors[6] = result_vector.getX();
         array_vectors[7] = result_vector.getY();

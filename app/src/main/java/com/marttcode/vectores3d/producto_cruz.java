@@ -38,8 +38,8 @@ public class producto_cruz extends AppCompatActivity {
      * y los despliega utilizando una clase externa.
      */
     private void show_vectors(){
-        execute.display_vectors(R.string.producto_cruz_vector1, 0,1,2, vector1, this);
-        execute.display_vectors(R.string.producto_cruz_vector2, 3,4,5, vector2, this);
+        execute.display_vectors(R.string.vector1, 0,1,2, vector1, this);
+        execute.display_vectors(R.string.vector2, 3,4,5, vector2, this);
     }
 
 
@@ -49,6 +49,6 @@ public class producto_cruz extends AppCompatActivity {
     private void cross_product(){
         execute.cross_product();
 
-        execute.display_vectors(R.string.producto_punto_result, 6,7,8, result, this);
+        execute.display_vectors(R.string.resutl, 6,7,8, result, this);
     }
 }
