@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Vectores3D</string>
+
+    <string name="start"><b>Calculatrice vectorielle \n3D</b></string>
+    <string name="title_activity_insert_data">insert_data</string>
+    <string name="title_activity_menu_inicio">menu_inicio</string>
+
+
+    <string name="vector1" formatted="false">Vecteur 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="vector2" formatted="false">Vecteur 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl" formatted="false">Résultat:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl1" formatted="false">Résultat 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl2" formatted="false">Résultat 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+
+
+    <string name="suma_head"><b>Addition</b></string>
+    <string name="resta_head"><b>Soustraire</b></string>
+    <string name="modulo_head"><b>La longueur</b></string>
+        <string name="modulo_result">Rll: %.3f</string>
+    <string name="producto_punto_head"><b>Point Produit</b></string>
+        <string name="producto_punto_result">PP: %.3f</string>
+
+    <string name="producto_cruz_head"><b>Produits croisés</b></string>
+    <string name="vector_unitario_head" formatted="false"><b>Vecteur d unité</b></string>
+        <string name="vector_unitario_result1">Vecteur d unité 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+        <string name="vector_unitario_result2">Vecteur d unité 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+
+
+    <string name="menu_head"><b>Saisissez les valeurs</b></string>
+    <string name="menu_vector_value_x">X</string>
+    <string name="menu_vector_value_y">Y</string>
+    <string name="menu_vector_value_z">Z</string>
+
+
+    <string name="menu_subhead1">Vecteur 1</string>
+    <string name="menu_subhead2">Vecteur 2</string>
+
+
+    <string name="menu_item1">Addition</string>
+    <string name="menu_item2">Soustraire</string>
+    <string name="menu_item3">Point Produit</string>
+    <string name="menu_item4">Produits croisés</string>
+    <string name="menu_item5">Vecteur d unité</string>
+    <string name="menu_item6">La longueur</string>
+    
+    
+    <string name="error_fill">Vérifiez les valeurs</string>
+
+</resources>

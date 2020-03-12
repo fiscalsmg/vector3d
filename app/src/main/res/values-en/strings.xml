@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Vectores3D</string>
+
+    <string name="start"><b>Vector Calculator\n3D</b></string>
+    <string name="title_activity_insert_data">insert_data</string>
+    <string name="title_activity_menu_inicio">menu_inicio</string>
+
+
+    <string name="vector1">Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="vector2">Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl">Result:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl1">Result 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+    <string name="resutl2">Result 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+
+
+    <string name="suma_head"><b>Addition</b></string>
+    <string name="resta_head"><b>Subtraction</b></string>
+    <string name="modulo_head"><b>Magnitude</b></string>
+        <string name="modulo_result">Rm: %.3f</string>
+    <string name="producto_punto_head"><b>Point Product</b></string>
+        <string name="producto_punto_result">Pp: %.3f</string>
+
+    <string name="producto_cruz_head"><b>Cross Product</b></string>
+    <string name="vector_unitario_head"><b>Unit Vector</b></string>
+        <string name="vector_unitario_result1">Unit Vector 1:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+        <string name="vector_unitario_result2">Unit Vector 2:\n&lt; %.3f, %.3f, %.3f &gt;</string>
+
+
+    <string name="menu_head"><b>Type the values</b></string>
+    <string name="menu_vector_value_x">X</string>
+    <string name="menu_vector_value_y">Y</string>
+    <string name="menu_vector_value_z">Z</string>
+
+
+    <string name="menu_subhead1">Vector 1</string>
+    <string name="menu_subhead2">Vector 2</string>
+
+
+    <string name="menu_item1">Addition</string>
+    <string name="menu_item2">Subtraction</string>
+    <string name="menu_item3">Point Product</string>
+    <string name="menu_item4">Cross Product</string>
+    <string name="menu_item5">Unit Vector</string>
+    <string name="menu_item6">Magnitude</string>
+    
+    
+    <string name="error_fill">Check the values</string>
+
+</resources>
